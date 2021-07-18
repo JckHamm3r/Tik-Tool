@@ -427,7 +427,7 @@ class Ui_MainWindow(object):
         self.fw_button.setText(_translate("MainWindow", "Update Firmware"))
         self.msg_label.setText(_translate("MainWindow", "Message"))
         self.configr_button.setText(_translate("MainWindow", "Configure Router Mode"))
-        self.reset_button.setText(_translate("MainWindow", "Factory Reset Router"))
+        self.reset_button.setText(_translate("MainWindow", "Factory Reset Device"))
 
 
 ### Custom Actions and Settings ###
@@ -482,18 +482,20 @@ class Ui_MainWindow(object):
         self.device_password = 'YOUR_PASSWORD'
         self.romon_secret = 'YOURSECRET'
 
-    
+    # Function to auto hide message
     def hide_msg(self):
         self.msg_label.hide()
         self.confirm_reset = 0
         self.timer.stop()
         
+    # Function to show a message    
     def show_msg(self, color, msg):
         self.msg_label.setText(msg)
         self.msg_label.setStyleSheet(f"color:{color}")
         self.msg_label.show()
         self.timer.start(5000)
-        
+    
+    # Function that resets the form style
     def reset_style(self):
         self.msg_label.hide()
         self.ssid_line.setStyleSheet("border-radius:10px;\nborder: 1px solid rgb(86, 86, 86);")
@@ -503,7 +505,8 @@ class Ui_MainWindow(object):
         self.device_select.setStyleSheet("border-top-left-radius:10px;\nborder-bottom-left-radius:10px;\nborder: 1px solid rgb(86, 86, 86);")
         self.package_select.setStyleSheet("border-top-left-radius:10px;\nborder-bottom-left-radius:10px;\nborder: 1px solid rgb(86, 86, 86);")
         self.fw_line.setStyleSheet("border-radius:10px;\nborder: 1px solid rgb(86, 86, 86);")
-        
+     
+    # Function that highlights errors
     def highlight_fields(self, *args):
         if self.ssid_line in args and self.ssid_line.text() == '':
             self.ssid_line.setStyleSheet("border-radius:10px;\nborder: 2px solid rgb(255, 0, 0, 175);")
@@ -519,7 +522,8 @@ class Ui_MainWindow(object):
             self.package_select.setStyleSheet("border-top-left-radius:10px;\nborder-bottom-left-radius:10px;\nborder: 2px solid rgb(255, 0, 0, 175);")
         if self.fw_line in args and self.fw_line.text() == '':
             self.fw_line.setStyleSheet("border-radius:10px;\nborder: 2px solid rgb(255, 0, 0, 175);")
-        
+    
+    # Function that FTPs files to the device   
     def send_config(self, timestamp, path, version, password):
         if not os.path.exists('C:\\Tik_Configs\\'):
             os.makedirs('C:\\Tik_Configs\\')
@@ -535,7 +539,8 @@ class Ui_MainWindow(object):
                     fw_file = path.split("/")
                     fw_file = fw_file[-1]
                     ftp.storbinary(f'STOR {fw_file}', file)
-                    
+    
+    # Function that is bound to the "Configure Router Mode" button               
     def config_device(self, ssid, wireless_pass, account_num, name, package):
         self.confirm_reset = 0
         timestamp = datetime.datetime.now().strftime("%b-%d-%Y_%H:%M:%S")
@@ -638,7 +643,8 @@ class Ui_MainWindow(object):
                 self.show_msg('red', "Password must be at least 8 characters long")
             else:
                 self.show_msg('red', "Please fill out all highlighted fields")
-            
+    
+    # Function that is bound to the "Configure Bridge Mode" button 
     def config_bridg(self, account_num, name, package):
         try:
             self.confirm_reset = 0
@@ -733,6 +739,8 @@ class Ui_MainWindow(object):
             self.show_msg('red', 'Something went wrong')
         
     confirm_reset = 0
+    
+    # Function that is bound to the "Factory Reset Device" button
     def reset_router(self):
         self.reset_style()
         
@@ -765,12 +773,14 @@ class Ui_MainWindow(object):
 
 
             self.confirm_reset = 0
-
+            
+    # Function that is bound to the "Select Firmware" button 
     def select_file(self):
         filename = QtWidgets.QFileDialog.getOpenFileName(None,"getOpenFileName","C:\\","All Files (*.npk);;Mikrotik Firmware (*.npk)")
         print(filename)
         self.fw_line.setText(filename[0])
-
+        
+    # Function that is bound to the "Update Firmware" button 
     def upgrade_fw(self):
         self.reset_style()
         if self.fw_line.text() != '':
@@ -816,7 +826,7 @@ class Ui_MainWindow(object):
             self.show_msg('red', "Please select firmware file")
             self.highlight_fields(self.fw_line)
 
-
+# Main loop for the program
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
