@@ -6,6 +6,8 @@ See License
 # Tik-Tool
 Tool specifically designed for WISPs to quickly configure MikroTik devices.
 
+Written in Python 3.8
+
 # Requirements
 Windows OS
 
