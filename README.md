@@ -26,5 +26,7 @@ When you use the firmware upgrade function, the program freezes up while the fil
 
 This tool will create a directory under your C:\ drive called Tik-Configs. This is where all of the files are created so that they can be sent via FTP to the device.
 
+Unless you are trying to change things in the actual GUI, you shouldnt have to mess with anything above line #433.
+
 # Customization Help
 If you would like for me to customize this tool for you, reach out to me and we can see if we can come to some sort of an agreement. You can find me on the WISP Talk Facebook group - Chris Josey
