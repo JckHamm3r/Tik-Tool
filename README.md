@@ -2,19 +2,24 @@
 Tools specifically designed for WISPs to quickly configure MikroTik devices
 
 # Requirements
-Windows OS\n
+Windows OS
+
 python 3.7 or greater
+
 fplib, PyQt5 python modules
 
 Make sure that the tik_tool_rc.py file is in the same directory as the Tik Tool Public.py file.
 
 # Setup
 The Mikrotik device needs to be reachable via 192.168.88.1.
+
 The tool only knows admin as the user.
+
 The program only knows the blank password or the password that you set on line #482
 
 # Customize
 Change line #482 to the password that you want the device to have
+
 Change line #483 to the ROMON seceret that you want the device to have
 
 # Notes
