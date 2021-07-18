@@ -13,7 +13,7 @@ Windows OS
 
 python 3.7 or greater
 
-fplib, PyQt5 python modules
+ftplib, PyQt5 python modules
 
 Make sure that the tik_tool_rc.py file is in the same directory as the Tik Tool Public.py file.
 
