@@ -32,13 +32,13 @@ Change line #483 to the ROMON seceret that you want the device to have.
 Look for "config =" to see the content of the .rsc files that will be created.
 
 # Notes
-Currently there is only a config for the RB2011, I will be adding other devices and configs later. If you know what you are doing, there are already placeholders for an RB2011 and HAP ac3.
+Currently there is only a config for the RB2011 built into the program, I will be adding other devices and configs in the future. If you know what you are doing, there are already placeholders for an RB4011 and HAP ac3.
 
 This tool was built with my WISP preferences in mind, feel free to change it to how you would like it.
 
 When you use the firmware upgrade function, the program freezes up while the file is uploading to the device, I will fix that at a later date.
 
-This tool will create a directory under your C:\ drive called Tik-Configs. This is where all of the files are created so that they can be sent via FTP to the device.
+This tool will create a directory under your C:\ drive called Tik-Configs. This is where all of the files that will be FTPd to the device will be.
 
 Unless you are trying to change things in the actual GUI, you shouldnt have to mess with anything above line #433.
 
