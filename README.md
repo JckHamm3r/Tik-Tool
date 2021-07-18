@@ -1,5 +1,5 @@
-# WISP-Tools
-Tools specifically designed for WISPs
+# Tik-Tool
+Tools specifically designed for WISPs to quickly configure MikroTik devices
 
 
 Change line #482 to the password that you want the device to have
