@@ -1,3 +1,6 @@
+# Disclaimer
+This tool was made specifically for the use of my company and I will not take responsibility for anything that this tool may break or improperly configure for personal or professional reasons. Use this tool at your own risk.
+
 # Tik-Tool
 Tools specifically designed for WISPs to quickly configure MikroTik devices
 
@@ -22,6 +25,8 @@ Change line #482 to the password that you want the device to have
 
 Change line #483 to the ROMON seceret that you want the device to have
 
+Look for "config =" to see the content of the .rsc files that will be created.
+
 # Notes
 Currently there is only a config for the RB2011, I will be adding other devices and configs later. If you know what you are doing, there are already placeholders for an RB2011 and HAP ac3.
 
@@ -32,6 +37,8 @@ When you use the firmware upgrade function, the program freezes up while the fil
 This tool will create a directory under your C:\ drive called Tik-Configs. This is where all of the files are created so that they can be sent via FTP to the device.
 
 Unless you are trying to change things in the actual GUI, you shouldnt have to mess with anything above line #433.
+
+Things act weird when you are winboxed into the device that you are trying to configure when the tool is trying to send a config file, so dont winbox into the device until after you send the config
 
 # Customization Help
 If you would like for me to customize this tool for you, reach out to me and we can see if we can come to some sort of an agreement. You can find me on the WISP Talk Facebook group - Chris Josey
