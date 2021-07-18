@@ -2,7 +2,7 @@
 This tool was made specifically for the use of my company and I will not take responsibility for anything that this tool may break or improperly configure for personal or professional reasons. Use this tool at your own risk.
 
 # Tik-Tool
-Tools specifically designed for WISPs to quickly configure MikroTik devices
+Tool specifically designed for WISPs to quickly configure MikroTik devices.
 
 # Requirements
 Windows OS
@@ -18,12 +18,12 @@ The Mikrotik device needs to be reachable via 192.168.88.1.
 
 The tool only knows admin as the user.
 
-The program only knows the blank password or the password that you set on line #482
+The program only knows the blank password or the password that you set on line #482.
 
 # Customize
-Change line #482 to the password that you want the device to have
+Change line #482 to the password that you want the device to have.
 
-Change line #483 to the ROMON seceret that you want the device to have
+Change line #483 to the ROMON seceret that you want the device to have.
 
 Look for "config =" to see the content of the .rsc files that will be created.
 
@@ -38,7 +38,7 @@ This tool will create a directory under your C:\ drive called Tik-Configs. This 
 
 Unless you are trying to change things in the actual GUI, you shouldnt have to mess with anything above line #433.
 
-Things act weird when you are winboxed into the device that you are trying to configure when the tool is trying to send a config file, so dont winbox into the device until after you send the config
+Things act weird when you are winboxed into the device that you are trying to configure when the tool is trying to send a config file, so dont winbox into the device until after you send the config.
 
 # Customization Help
-If you would like for me to customize this tool for you, reach out to me and we can see if we can come to some sort of an agreement. You can find me on the WISP Talk Facebook group - Chris Josey
+If you would like for me to customize this tool for you, reach out to me to see if we can come to some sort of an agreement. You can find me on the WISP Talk Facebook group. - Chris Josey
