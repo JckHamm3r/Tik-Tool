@@ -2,7 +2,7 @@
 Tools specifically designed for WISPs to quickly configure MikroTik devices
 
 # Requirements
-Windows OS
+Windows OS\n
 python 3.7 or greater
 fplib, PyQt5 python modules
 
