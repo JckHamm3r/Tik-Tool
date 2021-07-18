@@ -45,4 +45,6 @@ Unless you are trying to change things in the actual GUI, you shouldnt have to m
 Things act weird when you are winboxed into the device that you are trying to configure when the tool is trying to send a config file, so dont winbox into the device until after you send the config.
 
 # Customization Help
-If you would like for me to customize this tool for you, reach out to me to see if we can come to some sort of an agreement. You can find me on the WISP Talk Facebook group. - Chris Josey
+I can customize and compile this into a .exe file for you to use within your organization as well.
+
+If interested, reach out to me to see if we can come to some sort of an agreement. You can find me on the WISP Talk Facebook group. - Chris Josey
