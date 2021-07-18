@@ -1,6 +1,8 @@
 # Disclaimer
 This tool was made specifically for the use of my company and I will not take responsibility for anything that this tool may break or improperly configure for personal or professional reasons. Use this tool at your own risk.
 
+See License
+
 # Tik-Tool
 Tool specifically designed for WISPs to quickly configure MikroTik devices.
 
