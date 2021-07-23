@@ -68,7 +68,7 @@ class Ui_MainWindow(object):
         self.widget = QtWidgets.QWidget(self.centralwidget)
         self.widget.setMinimumSize(QtCore.QSize(400, 120))
         self.widget.setMaximumSize(QtCore.QSize(16777215, 16777203))
-        self.widget.setStyleSheet("background-image: url(:/newPrefix/Users/JackHammer/Downloads/mikrotik_logo/mt.png);\n"
+        self.widget.setStyleSheet("background-image: url(mt.png);\n"
                                     "background-repeat: no-repeat;")
         self.widget.setObjectName("widget")
         self.horizontalLayout.addWidget(self.widget)
