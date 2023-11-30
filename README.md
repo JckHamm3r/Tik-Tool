@@ -47,4 +47,4 @@ Things act weird when you are winboxed into the device that you are trying to co
 # Customization Help
 I can customize and compile this into a .exe file for you to use within your organization as well.
 
-If interested, reach out to me to see if we can come to some sort of an agreement. You can find me on the WISP Talk Facebook group. - Chris Josey
+If interested, reach out to me to see if we can come to some sort of an agreement. You can find me on the WISP Talk Facebook group. 
